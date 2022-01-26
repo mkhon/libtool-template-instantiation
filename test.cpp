@@ -13,5 +13,5 @@ void A<T>::print()
 #define LIBTEST_EXPORT
 #endif
 
-template LIBTEST_EXPORT class A<const char *>;
+template class LIBTEST_EXPORT A<const char *>;
 //template LIBTEST_EXPORT void A<const char *>::print();
