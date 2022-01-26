@@ -1,9 +1,13 @@
-/.deps
+/.deps/
+/.libs/
 /autom4te.cache/
 /config.h
 /config.log
 /config.status
 /libtool
+/prog
 /stamp-h1
 /Makefile
+*.la
+*.lo
 *.o
