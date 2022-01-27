@@ -4,7 +4,7 @@
 template<class T>
 void A<T>::print()
 {
-	std::cout << this->_t << std::endl;
+	std::cout << "[explicit instantiation]: " <<this->_t << std::endl;
 }
 
 #ifdef _MSC_VER
@@ -15,3 +15,9 @@ void A<T>::print()
 
 template class LIBTEST_EXPORT A<const char *>;
 //template LIBTEST_EXPORT void A<const char *>::print();
+
+template<>
+void A<std::string>::print()
+{
+	std::cout << "[specizalization]: " << this->_t << std::endl;
+}
